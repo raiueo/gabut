@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1>Hai cantikkkk</h1>
+        <img src="horimiya-mad.gif" 
+        width="40%" height="50%" alt="Flikt GIF - Flikt GIFs">
+        <h1>Bobo yaa udah malem:)</h1>
+        <button id='btn_mau' onclick='alert("MIMPI INDAH YAA")'>Mau</button>&nbsp;
+        <button id='btn_gamau' onclick='gamau(this)' style='position:absolute'>Gamau</button>
+    </body>
+    <script>
+        function gamau(id){
+            var mau = document.getElementById('btn_mau');
+            var i = Math.floor(Math.random()*300)+1;
+            var j = Math.floor(Math.random()*100)+mau.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = j+'px';
+        }
+    </script>
+</html>
