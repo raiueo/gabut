@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><center>
+    <div class="box1">
+        <img src="banner.jpg" alt="ini banner" align="center">
+    </div></center>
+    <!-- menu awal -->
+    <div class="box2">
+        <nav>
+            <div class="wrapper">
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home </a>|</li>
+                        <li><a href="galery.html">Galery</a>|</li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- menu akhir -->
+    <!-- isi awal -->
+    <div class="box3">
+        <div class="wrapper">
+            <section id="home">
+                <img src="aku.png" alt="ini logo" id="contact">
+                
+                <div class="kolom">
+                    <div class="satu">
+                        <script type="text/javascript">
+                            var time = new Date();
+                            var jam = time.getHours();
+                            if(jam<=9){
+                                document.write("<b>Selamat Pagi");
+                            }
+                            else if(jam<=15){
+                                document.write("<b>Selamat siang");
+                            }
+                            else if(jam<=18){
+                                document.write("<b>Selamat sore");
+                            }
+                            else if(jam<=23){
+                                document.write("<b>Selamat malam");
+                            }
+                            else{
+                                document.write("<b>Selamat malam");
+                            }
+                            var bulan = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+                            var hari = ["Minggu","Senin","Selasa","Rabu","Kamis","Jum'at","Sabtu"];
+                            // document.write(hari[1]);
+                            var waktu = new Date();
+                            var tgl = waktu.getDate();
+                            var hr  = waktu.getDay();
+                            var bln = waktu.getMonth();
+                            var thn = waktu.getFullYear();
+                            document.write("<p>"+hari[hr]+", "+tgl+" "+bulan[bln]+" "+thn+"</p>");
+                        </script>
+                    </div>
+                    <h2>Hubungi Kami</h2>
+                    <p class="text">
+                        Perkenalkan nama saya, Muhammad Raihan dari Prodi Sistem Informasi Semester 1. Jika ada masalah pada web ini silahkan hubungi saya pada form dibawah ini, sekian terimakasih...
+                    </p>
+                    </div>
+            </section>
+            <div class="con">
+            <form action="" class="contact">
+                <table class="con">
+                    <tr class="contact">
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text" name="nama"></td>
+                    </tr>
+                    <tr class="contact">
+                        <td>Alamat</td>
+                        <td>:</td>
+                        <td><input type="text" name="alamat"></td>
+                    </tr>
+                    <tr class="contact">
+                        <td>Kota</td>
+                        <td>:</td>
+                        <td>
+                            <select name="agama">
+                                <option value="">Jakarta</option>
+                                <option value="">Bogor</option>
+                                <option value="">Bandung</option>
+                                <option value="">Bekasi</option>
+                                <option value="">Tanggerang</option>
+                                <option value="">Depok</option>
+                                <option value="">dll</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="contact">
+                        <td>Komentar</td>
+                        <td>:</td>
+                        <td>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr class="contact">
+                        <td></td>
+                        <td></td>
+                        <td><input type="submit" value="Kirim"></td>
+                    </tr>
+                </table>
+            </form></div>
+        </div>
+    </div>
+    <!-- isi akhir -->
+    <!-- gambar awal -->
+    <div class="box4">
+
+    </div>
+    <!-- gambar akhir -->
+    <!-- footer awal -->
+    <div class="box5">
+        <div class="footer">
+            <footer>
+                CopyRight - Muhammad Raihan 221011700279
+            </footer>
+        </div>
+    </div>
+    <!-- footer akhir -->
+</body>
+</html>
